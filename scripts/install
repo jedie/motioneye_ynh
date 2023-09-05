@@ -134,7 +134,7 @@ ynh_script_progression --message="Adding a configuration file..." --weight=1
 
 mkdir -p /etc/motioneye
 mkdir -p /var/lib/motioneye
-ynh_add_config --template="../conf/motioneye.conf" --destination="etc/motioneye/motioneye.conf"
+ynh_add_config --template="../conf/motioneye.conf" --destination="/etc/motioneye/motioneye.conf"
 
 # FIXME: this should be handled by the core in the future
 # You may need to use chmod 600 instead of 400,
