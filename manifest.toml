@@ -71,8 +71,10 @@ ram.runtime = "50M"
         # This will pre-fetch the asset which can then be deployed during the install/upgrade scripts with :
         #    ynh_setup_source --dest_dir="$install_dir"
         # You can also define other assets than "main" and add --source_id="foobar" in the previous command
-        url = "https://github.com/motioneye-project/motioneye/archive/dev.tar.gz"
-        sha256 = "561f3350a0da8cabd01e82d92c56e146da5bd15712d1dcb647648c9a57d573c6"
+        url = "https://github.com/motioneye-project/motioneye/archive/ae136a4c45034839db10388dd7cd5ad7ecfe2f21.tar.gz"
+        sha256 = "047f2e11ceb9f8af3f07bde99c9f520bf0b78485bcedfdaa1424d75cb76b30c5"
+        extract = false
+        rename = "source.tar.gz"
 
         # These infos are used by https://github.com/YunoHost/apps/blob/master/tools/autoupdate_app_sources/autoupdate_app_sources.py
         # to auto-update the previous asset urls and sha256sum + manifest version

@@ -172,8 +172,7 @@ ynh_script_progression --message="Installing python dependencies..." --weight=1
 pushd $install_dir
 	python3 -m venv venv
     venv/bin/pip install --upgrade pip
-    venv/bin/pip install dev.tar.gz
-    ls -R #Only to find where meyectl is installed
+    venv/bin/pip install source.tar.gz
 popd
 
 #=================================================
