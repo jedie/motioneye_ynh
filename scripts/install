@@ -169,7 +169,7 @@ chown $app:$app "/var/lib/motioneye"
 ynh_script_progression --message="Installing python dependencies..." --weight=1
 
 
-pushd /var/www/__APP__
+pushd /var/www/motionEye
 	python3 -m venv venv
     venv/bin/pip install --upgrade pip
     venv/bin/pip install dev.tar.gz
