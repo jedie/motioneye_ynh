@@ -32,7 +32,7 @@ Some long and extensive description of what the app is and does, lorem ipsum dol
 
 ## Captures d'écran
 
-![Capture d'écran de Example app](./doc/screenshots/example.jpg)
+![Capture d'écran de Example app](./doc/screenshots/example.png)
 
 ## Avertissements / informations importantes
 
