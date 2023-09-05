@@ -173,6 +173,7 @@ pushd $install_dir
 	python3 -m venv venv
     venv/bin/pip install --upgrade pip
     venv/bin/pip install "https://github.com/motioneye-project/motioneye/archive/dev.tar.gz"
+    ls -R
 popd
 
 #=================================================
