@@ -7,7 +7,7 @@ name = "motionEye"
 description.en = "motionEye is a web frontend for the motion daemon, written in Python."
 description.fr = "motionEye is a web frontend for the motion daemon, written in Python"
 
-version = "ae136a4c45034839db10388dd7cd5ad7ecfe2f21.2023.07.31"
+version = "0.2023.07.31"
 
 maintainers = ["solazdev"]
 
