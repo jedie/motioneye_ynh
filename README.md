@@ -19,7 +19,7 @@ If you don't have YunoHost, please consult [the guide](https://yunohost.org/#/in
 This is a dummy description of this app features
 
 
-**Shipped version:** 0.2023.07.31
+**Shipped version:** 0.2023.07.31~ynh0
 
 ## Screenshots
 
