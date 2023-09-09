@@ -110,29 +110,6 @@ yunohost service add $app --description="motionEye server for YunoHost" --log="/
 # Use logrotate to manage application logfile(s)
 ynh_use_logrotate
 
-#=================================================
-# APP INITIAL CONFIGURATION
-#=================================================
-# ADD A CONFIGURATION
-#=================================================
-ynh_script_progression --message="Adding a configuration file..." --weight=1
-
-### You can add specific configuration files.
-###
-### Typically, put your template conf file in ../conf/your_config_file
-### The template may contain strings such as __FOO__ or __FOO_BAR__,
-### which will automatically be replaced by the values of $foo and $foo_bar
-###
-### ynh_add_config will also keep track of the config file's checksum,
-### which later during upgrade may allow to automatically backup the config file
-### if it's found that the file was manually modified
-###
-### Check the documentation of `ynh_add_config` for more info.
-
-mkdir -p /etc/motioneye
-mkdir -p /var/lib/motioneye
-ynh_add_config --template="../conf/motioneye.conf" --destination="/etc/motioneye/motioneye.conf"
-
 
 ### For more complex cases where you want to replace stuff using regexes,
 ### you shoud rely on ynh_replace_string (which is basically a wrapper for sed)
@@ -166,11 +143,29 @@ pushd $install_dir
     venv/bin/pip install source.tar.gz
 popd
 
+
 #=================================================
-# GENERIC FINALIZATION
+# APP INITIAL CONFIGURATION
 #=================================================
-# START SYSTEMD SERVICE
+# ADD A CONFIGURATION
 #=================================================
+ynh_script_progression --message="Adding a configuration file..." --weight=1
+
+### You can add specific configuration files.
+###
+### Typically, put your template conf file in ../conf/your_config_file
+### The template may contain strings such as __FOO__ or __FOO_BAR__,
+### which will automatically be replaced by the values of $foo and $foo_bar
+###
+### ynh_add_config will also keep track of the config file's checksum,
+### which later during upgrade may allow to automatically backup the config file
+### if it's found that the file was manually modified
+###
+### Check the documentation of `ynh_add_config` for more info.
+
+mkdir -p /etc/motioneye
+mkdir -p /var/lib/motioneye
+ynh_add_config --template="../conf/motioneye.conf" --destination="/etc/motioneye/motioneye.conf"
 
 
 # FIXME: this should be handled by the core in the future
@@ -182,6 +177,14 @@ popd
 chmod 777 "/etc/motioneye/motioneye.conf"
 chmod 777 "/etc/motioneye"
 chmod 777 "/var/lib/motioneye"
+
+
+
+#=================================================
+# GENERIC FINALIZATION
+#=================================================
+# START SYSTEMD SERVICE
+#=================================================
 
 ynh_script_progression --message="Starting a systemd service..." --weight=1
 
