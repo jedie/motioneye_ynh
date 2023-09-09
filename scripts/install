@@ -179,9 +179,9 @@ popd
 # chown motion:motion "/etc/motioneye/"
 # chown motion:motion "/etc/motioneye/motioneye.conf"
 # chown motion:motion "/var/lib/motioneye"
-chmod 666 "/etc/motioneye/motioneye.conf"
-chmod 666 "/etc/motioneye/"
-chmod 666 "/var/lib/motioneye"
+chmod 777 "/etc/motioneye/motioneye.conf"
+chmod 777 "/etc/motioneye/"
+chmod 777 "/var/lib/motioneye"
 
 ynh_script_progression --message="Starting a systemd service..." --weight=1
 
