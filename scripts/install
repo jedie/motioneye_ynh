@@ -63,18 +63,26 @@ pushd $install_dir
 popd
 
 #=================================================
-# GENERIC FINALIZATION
+# APP INITIAL CONFIGURATION
 #=================================================
-# START SYSTEMD SERVICE
+# ADD A CONFIGURATION
 #=================================================
+ynh_script_progression --message="Adding a configuration file..." --weight=1
 
-# FIXME: this should be handled by the core in the future
-# You may need to use chmod 600 instead of 400,
-# for example if the app is expected to be able to modify its own config
+mkdir -p /etc/motioneye
+mkdir -p /var/lib/motioneye
+ynh_add_config --template="../conf/motioneye.conf" --destination="/etc/motioneye/motioneye.conf"
+
 chown $app:$app "/etc/motioneye/"
 chown $app:$app "/var/lib/motioneye"
 chmod 664 "/etc/motioneye/"
 chmod 664 "/var/lib/motioneye"
+
+#=================================================
+# GENERIC FINALIZATION
+#=================================================
+# START SYSTEMD SERVICE
+#=================================================
 
 ynh_script_progression --message="Starting a systemd service..." --weight=1
 
