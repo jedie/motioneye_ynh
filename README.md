@@ -27,7 +27,6 @@ This is a dummy description of this app features
 
 ## Documentation and resources
 
-* Official app website: <https://github.com/motioneye-project/motioneye>
 * Official user documentation: <https://github.com/motioneye-project/motioneye/wiki>
 * Upstream app code repository: <https://github.com/motioneye-project/motioneye>
 * YunoHost documentation for this app: <https://yunohost.org/app_motioneye>
