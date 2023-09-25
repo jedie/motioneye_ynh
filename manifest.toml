@@ -13,7 +13,6 @@ maintainers = ["solazdev"]
 
 [upstream]
 license = "GPL-3.0"
-website = "https://github.com/motioneye-project/motioneye"
 userdoc = "https://github.com/motioneye-project/motioneye/wiki"
 code = "https://github.com/motioneye-project/motioneye"
 
