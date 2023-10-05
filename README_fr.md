@@ -29,7 +29,6 @@ Ceci est une fausse description des fonctionalités de l'app
 
 * Documentation officielle utilisateur : <https://github.com/motioneye-project/motioneye/wiki>
 * Dépôt de code officiel de l’app : <https://github.com/motioneye-project/motioneye>
-* Documentation YunoHost pour cette app : <https://yunohost.org/app_motioneye>
 * Signaler un bug : <https://github.com/YunoHost-Apps/motioneye_ynh/issues>
 
 ## Informations pour les développeurs

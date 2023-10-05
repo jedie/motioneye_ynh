@@ -29,7 +29,6 @@ This is a dummy description of this app features
 
 * Official user documentation: <https://github.com/motioneye-project/motioneye/wiki>
 * Upstream app code repository: <https://github.com/motioneye-project/motioneye>
-* YunoHost documentation for this app: <https://yunohost.org/app_motioneye>
 * Report a bug: <https://github.com/YunoHost-Apps/motioneye_ynh/issues>
 
 ## Developer info
