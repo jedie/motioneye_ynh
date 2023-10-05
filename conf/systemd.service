@@ -1,5 +1,5 @@
 [Unit]
-Description=motionEye Server for Yunohost
+Description=motionEye: Web frontend for the motion daemon
 After=network.target
 
 [Service]

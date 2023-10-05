@@ -19,7 +19,7 @@ If you don't have YunoHost, please consult [the guide](https://yunohost.org/#/in
 This is a dummy description of this app features
 
 
-**Shipped version:** 0.2023.07.31~ynh0
+**Shipped version:** 0.2023.07.31~ynh1
 
 ## Screenshots
 
@@ -27,7 +27,6 @@ This is a dummy description of this app features
 
 ## Documentation and resources
 
-* Official app website: <https://github.com/motioneye-project/motioneye>
 * Official user documentation: <https://github.com/motioneye-project/motioneye/wiki>
 * Upstream app code repository: <https://github.com/motioneye-project/motioneye>
 * YunoHost documentation for this app: <https://yunohost.org/app_motioneye>
