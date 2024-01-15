@@ -7,7 +7,7 @@ name = "motionEye"
 description.en = "Web frontend for the motion daemon"
 description.fr = "Web frontend for the motion daemon"
 
-version = "0.2023.07.31~ynh1"
+version = "0.43.1b1~ynh1"
 
 maintainers = ["solazdev"]
 
@@ -22,9 +22,9 @@ architectures = "all"
 multi_instance = true
 ldap = false
 sso = true
-disk = "50M"
-ram.build = "50M"
-ram.runtime = "50M"
+disk = "500M"
+ram.build = 5120M"
+ram.runtime = "1024M"
 
 [install]
     [install.domain]
@@ -50,8 +50,8 @@ ram.runtime = "50M"
     [resources.sources]
 
         [resources.sources.main]
-        url = "https://github.com/motioneye-project/motioneye/archive/ae136a4c45034839db10388dd7cd5ad7ecfe2f21.tar.gz"
-        sha256 = "047f2e11ceb9f8af3f07bde99c9f520bf0b78485bcedfdaa1424d75cb76b30c5"
+        url = "https://github.com/motioneye-project/motioneye/archive/refs/tags/0.43.1b1.tar.gz"
+        # sha256 = "047f2e11ceb9f8af3f07bde99c9f520bf0b78485bcedfdaa1424d75cb76b30c5"
         extract = false
         rename = "source.tar.gz"
 
