@@ -19,7 +19,7 @@ Si vous n’avez pas YunoHost, regardez [ici](https://yunohost.org/#/install) po
 Ceci est une fausse description des fonctionalités de l'app
 
 
-**Version incluse :** 0.2023.07.31~ynh1
+**Version incluse :** 0.43.1b1~ynh1
 
 ## Captures d’écran
 
@@ -29,6 +29,7 @@ Ceci est une fausse description des fonctionalités de l'app
 
 * Documentation officielle utilisateur : <https://github.com/motioneye-project/motioneye/wiki>
 * Dépôt de code officiel de l’app : <https://github.com/motioneye-project/motioneye>
+* YunoHost Store: <https://apps.yunohost.org/app/motioneye>
 * Signaler un bug : <https://github.com/YunoHost-Apps/motioneye_ynh/issues>
 
 ## Informations pour les développeurs
