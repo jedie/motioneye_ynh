@@ -51,7 +51,7 @@ ram.runtime = "1024M"
 
         [resources.sources.main]
         url = "https://github.com/motioneye-project/motioneye/archive/refs/tags/0.43.1b1.tar.gz"
-        # sha256 = "047f2e11ceb9f8af3f07bde99c9f520bf0b78485bcedfdaa1424d75cb76b30c5"
+        sha256 = "4eb191029a142f11f4c30cf558e2552ea4b9d659aee54cb65a5e7e4f6f56bd11"
         extract = false
         rename = "source.tar.gz"
 
