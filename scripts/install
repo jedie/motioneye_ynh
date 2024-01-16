@@ -56,6 +56,10 @@ pushd $install_dir
     venv/bin/pip install source.tar.gz
 popd
 
+mkdir -p /var/www/$app/run
+chown $app:$app /var/www/$app/run
+chmod 664 /var/www/$app/run
+
 #=================================================
 # APP INITIAL CONFIGURATION
 #=================================================
@@ -64,8 +68,7 @@ popd
 ynh_script_progression --message="Adding a configuration file..." --weight=1
 
 ynh_add_config --template="../conf/motioneye.conf" --destination="/var/www/$app/motioneye.conf"
-mkdir -p /var/www/$app/run
-chmod 644 /var/www/$app/run
+
 
 #=================================================
 # GENERIC FINALIZATION
