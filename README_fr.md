@@ -20,7 +20,6 @@ Si vous n’avez pas YunoHost, regardez [ici](https://yunohost.org/#/install) po
 
 Consultez le [__wiki__](https://github.com/motioneye-project/motioneye/wiki) pour plus de détails.
 
-
 **Version incluse :** 0.43.1b1~ynh1
 
 ## Captures d’écran
