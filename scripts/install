@@ -44,7 +44,7 @@ ynh_use_logrotate
 #=================================================
 ynh_script_progression --message="Adding a configuration file..." --weight=1
 
-ynh_add_config --template="../conf/motioneye.conf" --destination="/var/www/$app/motioneye.conf"
+ynh_add_config --template="../conf/motioneye.conf" --destination="$install_dir/motioneye.conf"
 #=================================================
 # SETUP APPLICATION
 #=================================================
@@ -57,17 +57,9 @@ pushd $install_dir
 popd
 
 # pid dir
-mkdir -p /var/www/$app/run
-chown $app:$app /var/www/$app/run
-chmod 664 /var/www/$app/run
-
-# data dirs
-mkdir -p /home/yunohost.app/$app/logs
-chown $app:$app /home/yunohost.app/$app/logs
-chmod 664 /home/yunohost.app/$app/logs
-mkdir -p /home/yunohost.app/$app/media
-chown $app:$app /home/yunohost.app/$app/media
-chmod 664 /home/yunohost.app/$app/media
+mkdir -p $install_dir/run
+chown $app:$app $install_dir/run
+chmod 664 $install_dir/run
 
 #=================================================
 # APP INITIAL CONFIGURATION
@@ -76,7 +68,7 @@ chmod 664 /home/yunohost.app/$app/media
 #=================================================
 ynh_script_progression --message="Adding a configuration file..." --weight=1
 
-ynh_add_config --template="../conf/motioneye.conf" --destination="/var/www/$app/motioneye.conf"
+ynh_add_config --template="../conf/motioneye.conf" --destination="$install_dir/motioneye.conf"
 
 
 #=================================================

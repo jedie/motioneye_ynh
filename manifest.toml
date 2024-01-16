@@ -23,7 +23,7 @@ multi_instance = true
 ldap = false
 sso = true
 disk = "500M"
-ram.build = "512M"
+ram.build = "256M"
 ram.runtime = "1024M"
 
 [install]
@@ -60,6 +60,7 @@ ram.runtime = "1024M"
     [resources.install_dir]
 
     [resources.data_dir]
+    subdirs = ["logs", "media"]
 
     [resources.permissions]
     main.url = "/"

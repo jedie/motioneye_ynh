@@ -30,6 +30,12 @@ then
 
 	# Download, check integrity, uncompress and patch the source from app.src
 	ynh_setup_source --dest_dir="$install_dir"
+
+	pushd $install_dir
+		python3 -m venv venv
+		venv/bin/pip install --upgrade pip
+		venv/bin/pip install source.tar.gz
+	popd
 fi
 
 chown -R $app:www-data "$install_dir"
@@ -54,10 +60,10 @@ ynh_use_logrotate --non-append
 #=================================================
 ynh_script_progression --message="Updating a configuration file..." --weight=1
 
-ynh_add_config --template="some_config_file" --destination="$install_dir/some_config_file"
+ynh_add_config --template="../conf/motioneye.conf" --destination="$install_dir/motioneye.conf"
 
-chmod 400 "$install_dir/some_config_file"
-chown $app:$app "$install_dir/some_config_file"
+chmod 600 "$install_dir/motioneye.conf"
+chown $app:$app "$install_dir/motioneye.conf"
 
 #=================================================
 # START SYSTEMD SERVICE
