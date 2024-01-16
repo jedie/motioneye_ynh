@@ -30,9 +30,9 @@ ram.runtime = "1024M"
     [install.domain]
     type = "domain"
 
-    [install.path]
-    type = "path"
-    default = "/motioneye"
+    # [install.path]
+    # type = "path"
+    # default = "/motioneye"
 
     [install.init_main_permission]
     type = "group"
