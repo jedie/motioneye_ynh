@@ -44,13 +44,7 @@ ynh_use_logrotate
 #=================================================
 ynh_script_progression --message="Adding a configuration file..." --weight=1
 
-mkdir -p /etc/motioneye
-mkdir -p /var/lib/motioneye
-ynh_add_config --template="../conf/motioneye.conf" --destination="/etc/motioneye/motioneye.conf"
-
-chmod 664 "/etc/motioneye/motioneye.conf"
-chown $app:$app "/etc/motioneye/motioneye.conf"
-
+ynh_add_config --template="../conf/motioneye.conf" --destination="/var/www/__APP__/motioneye.conf"
 #=================================================
 # SETUP APPLICATION
 #=================================================
@@ -69,14 +63,7 @@ popd
 #=================================================
 ynh_script_progression --message="Adding a configuration file..." --weight=1
 
-mkdir -p /etc/motioneye
-mkdir -p /var/lib/motioneye
-ynh_add_config --template="../conf/motioneye.conf" --destination="/etc/motioneye/motioneye.conf"
-
-chown $app:$app "/etc/motioneye/"
-chown $app:$app "/var/lib/motioneye"
-chmod 664 "/etc/motioneye/"
-chmod 664 "/var/lib/motioneye"
+ynh_add_config --template="../conf/motioneye.conf" --destination="/var/www/__APP__/motioneye.conf"
 
 #=================================================
 # GENERIC FINALIZATION
