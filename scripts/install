@@ -56,13 +56,19 @@ pushd $install_dir
     venv/bin/pip install source.tar.gz
 popd
 
+# pid dir
 mkdir -p /var/www/$app/run
 chown $app:$app /var/www/$app/run
 chmod 664 /var/www/$app/run
 
-mkdir -p /var/www/$app/logs
-chown $app:$app /var/www/$app/logs
-chmod 664 /var/www/$app/logs
+# data dirs
+mkdir -p /home/yunohost.app/$app/logs
+chown $app:$app /home/yunohost.app/$app/logs
+chmod 664 /home/yunohost.app/$app/logs
+mkdir -p /home/yunohost.app/$app/media
+chown $app:$app /home/yunohost.app/$app/media
+chmod 664 /home/yunohost.app/$app/media
+
 #=================================================
 # APP INITIAL CONFIGURATION
 #=================================================
