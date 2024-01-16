@@ -60,6 +60,9 @@ mkdir -p /var/www/$app/run
 chown $app:$app /var/www/$app/run
 chmod 664 /var/www/$app/run
 
+mkdir -p /var/www/$app/logs
+chown $app:$app /var/www/$app/logs
+chmod 664 /var/www/$app/logs
 #=================================================
 # APP INITIAL CONFIGURATION
 #=================================================
