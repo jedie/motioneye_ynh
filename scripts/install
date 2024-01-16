@@ -44,7 +44,7 @@ ynh_use_logrotate
 #=================================================
 ynh_script_progression --message="Adding a configuration file..." --weight=1
 
-ynh_add_config --template="../conf/motioneye.conf" --destination="/var/www/__APP__/motioneye.conf"
+ynh_add_config --template="../conf/motioneye.conf" --destination="/var/www/$app/motioneye.conf"
 #=================================================
 # SETUP APPLICATION
 #=================================================
@@ -63,7 +63,7 @@ popd
 #=================================================
 ynh_script_progression --message="Adding a configuration file..." --weight=1
 
-ynh_add_config --template="../conf/motioneye.conf" --destination="/var/www/__APP__/motioneye.conf"
+ynh_add_config --template="../conf/motioneye.conf" --destination="/var/www/$app/motioneye.conf"
 
 #=================================================
 # GENERIC FINALIZATION
