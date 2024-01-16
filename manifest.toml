@@ -23,7 +23,7 @@ multi_instance = true
 ldap = false
 sso = true
 disk = "500M"
-ram.build = "256M"
+ram.build = "512M"
 ram.runtime = "1024M"
 
 [install]
@@ -54,13 +54,14 @@ ram.runtime = "1024M"
         sha256 = "4eb191029a142f11f4c30cf558e2552ea4b9d659aee54cb65a5e7e4f6f56bd11"
         extract = false
         rename = "source.tar.gz"
+        # autoupdate.strategy = "latest_github_release"
 
     [resources.system_user]
 
     [resources.install_dir]
 
     [resources.data_dir]
-    subdirs = ["logs", "media"]
+    subdirs = ["media"]
 
     [resources.permissions]
     main.url = "/"

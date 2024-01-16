@@ -7,8 +7,8 @@ Type=simple
 User=__APP__
 Group=__APP__
 WorkingDirectory=__INSTALL_DIR__/venv
-ExecStart=__INSTALL_DIR__/venv/bin/meyectl startserver -c /var/www/__APP__/motioneye.conf
-StandardOutput=append:/var/log/__APP__/__APP__.log
+ExecStart=__INSTALL_DIR__/venv/bin/meyectl startserver -c __INSTALL_DIR__/motioneye.conf
+StandardOutput=append:__INSTALL_DIR__/__APP__.log
 StandardError=inherit
 Restart=on-abort
 
