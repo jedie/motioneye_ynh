@@ -4,8 +4,7 @@ packaging_format = 2
 
 id = "motioneye"
 name = "motionEye"
-description.en = "Web frontend for the motion daemon"
-description.fr = "Web frontend for the motion daemon"
+description.en = "A interface for the software motion, a video surveillance program with motion detection"
 
 version = "0.43.1b1~ynh1"
 
