@@ -16,12 +16,11 @@ If you don't have YunoHost, please consult [the guide](https://yunohost.org/#/in
 
 ## Overview
 
-This is a dummy description of this app features
+**motionEye** is an online interface for the software [_motion_](https://motion-project.github.io/), a video surveillance program with motion detection.
 
+Check out the [__wiki__](https://github.com/motioneye-project/motioneye/wiki) for more details.
 
-**Shipped version:** 1.0~ynh1
-
-**Demo:** https://demo.example.com
+**Shipped version:** 0.43.1b1~ynh1
 
 ## Screenshots
 
@@ -29,11 +28,9 @@ This is a dummy description of this app features
 
 ## Documentation and resources
 
-* Official app website: <https://github.com/motioneye-project/motioneye>
-* Official user documentation: <https://yunohost.org/apps>
-* Official admin documentation: <https://yunohost.org/packaging_apps>
+* Official user documentation: <https://github.com/motioneye-project/motioneye/wiki>
 * Upstream app code repository: <https://github.com/motioneye-project/motioneye>
-* YunoHost documentation for this app: <https://yunohost.org/app_motioneye>
+* YunoHost Store: <https://apps.yunohost.org/app/motioneye>
 * Report a bug: <https://github.com/YunoHost-Apps/motioneye_ynh/issues>
 
 ## Developer info
